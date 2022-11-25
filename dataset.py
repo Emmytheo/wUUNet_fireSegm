@@ -302,6 +302,6 @@ def merge_train_with_test():
 
 
 if __name__ == '__main__':
-    extract_dataset_zip()
+    # extract_dataset_zip()
     merge_train_with_test()
     print('The dataset has been unpacked')
