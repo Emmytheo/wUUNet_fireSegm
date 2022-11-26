@@ -667,7 +667,7 @@ class Validation(object):
         return overlay
 
     def calc_hist(self, jaccard_mult, _range):
-        X = np.linspace(0, 100, 100 / _range + 1)
+        X = np.linspace(0, 100, int(100 / _range + 1))
         Y = np.zeros_like(X)
         for value in jaccard_mult:
             Y[int(np.round(value * 100 / _range))] += 1
